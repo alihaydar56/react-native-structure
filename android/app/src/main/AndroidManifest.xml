@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.anadolusigorta">
+  package="com.amir.homework">
 
     <uses-permission android:name="android.permission.INTERNET" />
 

@@ -112,6 +112,16 @@ const baseStyles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
       },
+      shadow: {
+        shadowColor: '#3f3d56',
+        shadowOffset: {
+          width: 0,
+          height: 10,
+        },
+        shadowOpacity: 0.23,
+        shadowRadius: 11.27,
+        elevation: 6,
+      },
 });
 
 export default baseStyles;

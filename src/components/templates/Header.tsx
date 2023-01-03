@@ -1,7 +1,8 @@
 import { NavigationAction, useNavigation } from '@react-navigation/native';
 import React, { ReactElement } from 'react';
 import { StyleProp, View,
-    TouchableOpacity } from 'react-native';
+    TouchableOpacity, 
+    TextStyle} from 'react-native';
 import { ViewStyle } from 'react-native';
 import { DrawerActions } from '@react-navigation/native';
 import baseStyles from '../../themes/styles/base';
@@ -20,6 +21,7 @@ interface Props {
     rightComponent?: React.ReactElement;
     drawer?: boolean;
     navigation?:any;
+    titleStyle?: StyleProp<TextStyle>;
     onBackPress?: (() => void) | null;
 }
 
@@ -34,7 +36,7 @@ const Header = (props: Props) => {
                     {(props.leftComponent) || (props.withBack && <BackIcon onPress={props.onBackPress} />)}
                 </View>
             </View>
-            <Text type="Bold" style={baseStyles.headerTitle}>{props.title}</Text>
+            <Text type="Bold" style={[baseStyles.headerTitle,props.titleStyle]}>{props.title}</Text>
             <TouchableOpacity style={baseStyles.headerRight} onPress={()=>console.log("hey")}>
                 {props.rightComponent}
             </TouchableOpacity>

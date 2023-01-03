@@ -5,18 +5,16 @@ import { applyMiddleware, combineReducers } from 'redux';
 import thunk from 'redux-thunk';
 
 import tempReducer from './temp/reducer'
-import loadingReducer from "./loading/reducer";
 
 const rootReducer=combineReducers({
     tempReducer,
-    loadingReducer
 })
 
 const persistConfig={
     key:'root',
     storage:AsyncStorage,
     timeout:null,
-    whitelist:['tempReducer','loadingReducer']
+    blacklist:['tempReducer']
 }
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
