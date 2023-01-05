@@ -9,8 +9,8 @@ import baseStyles from '../../themes/styles/base';
 import { IconButton } from './Button';
 import BackIcon from '../BackIcon';
 import { Text } from './Text';
-import { Back, Menu } from '../Icons';
 import { wp } from '../../utils/screenResize';
+import { BackWhite } from '../Icons';
 
 
 interface Props {
@@ -21,7 +21,6 @@ interface Props {
     rightComponent?: React.ReactElement;
     drawer?: boolean;
     navigation?:any;
-    titleStyle?: StyleProp<TextStyle>;
     onBackPress?: (() => void) | null;
 }
 
@@ -32,12 +31,11 @@ const Header = (props: Props) => {
         <View style={[baseStyles.header, props.style]}>
             <View style={baseStyles.headerLeft}>
                 <View style={{flexDirection:'row', alignItems: 'center', justifyContent:'space-evenly'}}>
-                    {props.drawer && <IconButton icon={Menu} size={wp(6)} style={{marginRight: wp(2)}} onPress={()=>{navigation.dispatch(DrawerActions.openDrawer());}} />}
-                    {(props.leftComponent) || (props.withBack && <BackIcon onPress={props.onBackPress} />)}
+                    {(props.leftComponent) || (props.withBack && <BackWhite onPress={props.onBackPress} />)}
                 </View>
             </View>
-            <Text type="Bold" style={[baseStyles.headerTitle,props.titleStyle]}>{props.title}</Text>
-            <TouchableOpacity style={baseStyles.headerRight} onPress={()=>console.log("hey")}>
+            <Text type="Bold" style={[baseStyles.headerTitle]}>{props.title}</Text>
+            <TouchableOpacity style={baseStyles.headerRight} onPress={()=>{}}>
                 {props.rightComponent}
             </TouchableOpacity>
         </View>

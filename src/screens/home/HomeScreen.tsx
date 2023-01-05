@@ -9,9 +9,7 @@ import {
   Dimensions,
   TouchableOpacity,
   Linking,
-  ActivityIndicator,
 } from 'react-native';
-import {ScrollView} from 'react-native-gesture-handler';
 
 import {Text} from '../../components/templates/Text';
 import {Colors} from '../../themes';
@@ -19,79 +17,89 @@ import baseStyles from '../../themes/styles/base';
 import {convertHex, UUID} from '../../utils/helper';
 import {hp, wp} from '../../utils/screenResize';
 import {NavigationProp, useNavigation} from '@react-navigation/native';
-import {useDispatch, useSelector} from 'react-redux';
-import {AppDispatch, RootState} from '../../redux/store';
-
-import Header from '../../components/templates/Header';
-import {getProducts} from '../../services/api/product';
-import {IProduct} from '../../interfaces/product';
-import ProductCard from '../../components/home/ProductCard';
-
-const _SPACING = wp(4);
+import axios from 'axios';
 
 const HomeScreen = () => {
   const navigation = useNavigation<NavigationProp<any>>();
-  const dispatch = useDispatch<AppDispatch>();
-  const [skip, setSkip] = useState<number>(0);
-  const [limit, setLimit] = useState<number>(10);
-  const [data, setData] = useState<IProduct[]>([]);
-  const [loading, setLoading] = useState(false);
+  const [users, setUsers] = useState([]);
+
   const fetchData = async () => {
-  
-    const res = await getProducts(skip, limit);
-    setData(res.products);
+    try {
+      await axios
+        .get('https://dummyjson.com/users')
+        .then(res => res.data)
+        .then(res => {
+          console.log('ressss .', res);
+          setUsers(res?.users);
+        });
+    } catch (error) {
+      console.log('error while fetch users');
+    }
   };
 
   useEffect(() => {
     fetchData();
   }, []);
 
-  const onLoadMoreData=async()=>{
-    const currentSkip=skip+5;
-    const res = await getProducts(currentSkip, limit);
-    if(res.products.length!==0){
-      const newData=data.concat(res.products);
-      setData(newData);
-      setSkip(skip + 5);
-    }
-   
-  }
-
-  const RenderFooter = () => {
-    return loading ? (
-      <View style={{alignSelf: 'center'}}>
-        <ActivityIndicator size="large" color="#aaa"></ActivityIndicator>
-      </View>
-    ) : null;
-  };
-
-
   return (
-    <SafeAreaView style={[{flex: 1,backgroundColor:Colors.White}]}>
-      <Header
-        title={'HomeScreen'}
-        titleStyle={{color: Colors.White}}
-        style={{backgroundColor: Colors.Red}}
-      />
+    <SafeAreaView style={[{flex: 1}]}>
+      {/* Header part */}
+      <StatusBar backgroundColor={Colors.Blue} />
       <View style={baseStyles.content}>
-        <View style={{width: wp(95), marginTop: wp(5), alignSelf: 'center'}}>
+        <View
+          style={{
+            width: wp(95),
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            marginTop: wp(5),
+            alignSelf: 'center',
+          }}>
           <Text
             type="Montserrat"
             size={wp(5)}
             style={{lineHeight: 21, fontWeight: '700'}}>
-            Products
+            Users
           </Text>
         </View>
+
         <FlatList
-          showsHorizontalScrollIndicator={false}
-          data={data}
-          initialNumToRender={7}
-          keyExtractor={(item:IProduct) => UUID()}
-          renderItem={({item}) => <ProductCard {...item} />}
-          style={{padding: _SPACING}}
-          onEndReached={onLoadMoreData}
-          onEndReachedThreshold={0.5}
-          ListFooterComponent={RenderFooter}
+          data={users}
+          keyExtractor={item => item.id}
+          renderItem={({item}) => (
+            <TouchableOpacity
+              style={{
+                width: wp(90),
+                backgroundColor: Colors.White,
+                paddingHorizontal: wp(3),
+                paddingVertical: wp(2),
+                borderRadius: 10,
+                marginVertical: wp(2),
+              }}
+              onPress={()=>navigation.navigate('ProfileScreen',{user:item})}>
+              <Text>
+                {'name surname :' + item?.firstName + ', ' + item?.lastName}
+              </Text>
+              <Text>{'email :' + item?.email}</Text>
+              <Text>{'gender :' + item?.gender}</Text>
+              <Text>{'phone :' + item?.phone}</Text>
+            </TouchableOpacity>
+          )}
+          style={[{marginBottom: hp(2)}]}
+          contentContainerStyle={[
+            {
+              paddingTop: wp(2),
+              alignItems: 'center',
+              justifyContent: 'center',
+              alignSelf: 'center',
+            },
+          ]}
+          snapToInterval={Dimensions.get('window').width}
+          ListEmptyComponent={() => (
+            <View style={{justifyContent: 'center', alignSelf: 'center'}}>
+              <Text>No Data</Text>
+            </View>
+          )}
         />
       </View>
     </SafeAreaView>

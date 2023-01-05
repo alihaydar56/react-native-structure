@@ -21,7 +21,7 @@ const baseStyles = StyleSheet.create({
         width: wp(100),
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: Colors.Background,
+        backgroundColor: Colors.Blue,
         paddingHorizontal: '5%',
         height: wp(14),
         justifyContent: 'space-between',
@@ -41,7 +41,8 @@ const baseStyles = StyleSheet.create({
         aspectRatio: 2.8
     },
     headerTitle: {
-        fontSize: wp(4.5)
+        fontSize: wp(4.5),
+        color:Colors.White
     },
     modalView: {
         width: wp(90),

@@ -14,7 +14,8 @@ const Colors = {
     homeCategoryText:'#141414',
     Green:'#00BF71',
     Red:'#F6333B',
-    Purple:'#6C63FF'
+    Purple:'#6C63FF',
+    Blue:'#003366'
 };
 
 export default Colors;
