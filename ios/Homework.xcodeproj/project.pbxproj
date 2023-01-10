@@ -7,13 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD:ios/Homework.xcodeproj/project.pbxproj
 		00E356F31AD99517003FC87E /* HomeworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* HomeworkTests.m */; };
 		0C80B921A6F3F58F76C31292 /* libPods-Homework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-Homework.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-Homework-HomeworkTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Homework-HomeworkTests.a */; };
+=======
+		00E356F31AD99517003FC87E /* AnadoluSigortaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AnadoluSigortaTests.m */; };
+		01976672C0394DE599872FE7 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 433650D6C1FC4B50B853F489 /* Poppins-Medium.ttf */; };
+		0C80B921A6F3F58F76C31292 /* libPods-AnadoluSigorta.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-AnadoluSigorta.a */; };
+		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		32C9DE11D0D1425DBABE0FFF /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCA2A51422EB4C46BBB9B10D /* Montserrat-VariableFont_wght.ttf */; };
+		386F0EBBED7342C4A0C0E9DD /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D3AE00759A147D1809E7C22 /* Poppins-Black.ttf */; };
+		6B13B9ED9E8B4F88AFFD0822 /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0784C14279B44EE0BF2B02C5 /* Poppins-ExtraBold.ttf */; };
+		7699B88040F8A987B510C191 /* libPods-AnadoluSigorta-AnadoluSigortaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-AnadoluSigorta-AnadoluSigortaTests.a */; };
+		7CB6201FC1AB40DCB5AF8031 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97E5A6ECB1E14FCBA8925C6B /* Montserrat-Black.ttf */; };
+>>>>>>> 32512d2 (animation trainings):ios/AnadoluSigorta.xcodeproj/project.pbxproj
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9E9409E9BC604240A9647C1B /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A06B84002E7D44B2A5689B77 /* Poppins-Light.ttf */; };
+		A74F23EEE9CF487AB458E00A /* splashscreen.png in Resources */ = {isa = PBXBuildFile; fileRef = F6D06BFC2E8D48DEB441DFCA /* splashscreen.png */; };
+		AF305613DC8B4C7F9103E8F4 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 28CF05D0C23B44609A689CE5 /* Poppins-Regular.ttf */; };
+		B03DE9DE679B4F8A86A66BE6 /* AnadoluLogo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 13802132D7B74E938A6C45FC /* AnadoluLogo.svg */; };
+		B64DC3E6ADBB4CCEAE0BBD99 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2642E1919144D418C1B7BC9 /* Montserrat-Bold.ttf */; };
+		C78B37194133488698D66C2B /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3C1BDDE02FD40939A374239 /* Poppins-Bold.ttf */; };
+		F8CBD9813F694ABB9ED48836 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21C6537F79B741729216A7FA /* Montserrat-Regular.ttf */; };
+		FA866224AD5240EA9BB30781 /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F071F3F3C87473A950550F4 /* Poppins-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +51,7 @@
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* HomeworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HomeworkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+<<<<<<< HEAD:ios/Homework.xcodeproj/project.pbxproj
 		00E356F21AD99517003FC87E /* HomeworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "HomeworkTests.m"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Homework.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Homework/AppDelegate.h"; sourceTree = "<group>"; };
@@ -43,7 +66,36 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-Homework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Homework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "Homework/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Homework-HomeworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework-HomeworkTests.release.xcconfig"; path = "Target Support Files/Pods-Homework-HomeworkTests/Pods-Homework-HomeworkTests.release.xcconfig"; sourceTree = "<group>"; };
+=======
+		00E356F21AD99517003FC87E /* AnadoluSigortaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnadoluSigortaTests.m; sourceTree = "<group>"; };
+		0784C14279B44EE0BF2B02C5 /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-ExtraBold.ttf"; path = "../src/assets/fonts/Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		13802132D7B74E938A6C45FC /* AnadoluLogo.svg */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = AnadoluLogo.svg; path = ../src/assets/images/icons/AnadoluLogo.svg; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* AnadoluSigorta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnadoluSigorta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = AnadoluSigorta/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = AnadoluSigorta/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = AnadoluSigorta/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AnadoluSigorta/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AnadoluSigorta/main.m; sourceTree = "<group>"; };
+		19F6CBCC0A4E27FBF8BF4A61 /* libPods-AnadoluSigorta-AnadoluSigortaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnadoluSigorta-AnadoluSigortaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21C6537F79B741729216A7FA /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../src/assets/fonts/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		28CF05D0C23B44609A689CE5 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../src/assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		3B4392A12AC88292D35C810B /* Pods-AnadoluSigorta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnadoluSigorta.debug.xcconfig"; path = "Target Support Files/Pods-AnadoluSigorta/Pods-AnadoluSigorta.debug.xcconfig"; sourceTree = "<group>"; };
+		433650D6C1FC4B50B853F489 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../src/assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		4F071F3F3C87473A950550F4 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../src/assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-AnadoluSigorta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnadoluSigorta.release.xcconfig"; path = "Target Support Files/Pods-AnadoluSigorta/Pods-AnadoluSigorta.release.xcconfig"; sourceTree = "<group>"; };
+		5B7EB9410499542E8C5724F5 /* Pods-AnadoluSigorta-AnadoluSigortaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnadoluSigorta-AnadoluSigortaTests.debug.xcconfig"; path = "Target Support Files/Pods-AnadoluSigorta-AnadoluSigortaTests/Pods-AnadoluSigorta-AnadoluSigortaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5DCACB8F33CDC322A6C60F78 /* libPods-AnadoluSigorta.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnadoluSigorta.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AnadoluSigorta/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89C6BE57DB24E9ADA2F236DE /* Pods-AnadoluSigorta-AnadoluSigortaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnadoluSigorta-AnadoluSigortaTests.release.xcconfig"; path = "Target Support Files/Pods-AnadoluSigorta-AnadoluSigortaTests/Pods-AnadoluSigorta-AnadoluSigortaTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D3AE00759A147D1809E7C22 /* Poppins-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Black.ttf"; path = "../src/assets/fonts/Poppins-Black.ttf"; sourceTree = "<group>"; };
+		97E5A6ECB1E14FCBA8925C6B /* Montserrat-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Black.ttf"; path = "../src/assets/fonts/Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		A06B84002E7D44B2A5689B77 /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../src/assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
+		B3C1BDDE02FD40939A374239 /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../src/assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		CCA2A51422EB4C46BBB9B10D /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-VariableFont_wght.ttf"; path = "../src/assets/fonts/Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		E2642E1919144D418C1B7BC9 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Bold.ttf"; path = "../src/assets/fonts/Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+>>>>>>> 32512d2 (animation trainings):ios/AnadoluSigorta.xcodeproj/project.pbxproj
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F6D06BFC2E8D48DEB441DFCA /* splashscreen.png */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = splashscreen.png; path = ../src/assets/images/splashScreen/splashscreen.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +158,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3C726C09D3E34387A233E6F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				97E5A6ECB1E14FCBA8925C6B /* Montserrat-Black.ttf */,
+				E2642E1919144D418C1B7BC9 /* Montserrat-Bold.ttf */,
+				21C6537F79B741729216A7FA /* Montserrat-Regular.ttf */,
+				CCA2A51422EB4C46BBB9B10D /* Montserrat-VariableFont_wght.ttf */,
+				8D3AE00759A147D1809E7C22 /* Poppins-Black.ttf */,
+				B3C1BDDE02FD40939A374239 /* Poppins-Bold.ttf */,
+				0784C14279B44EE0BF2B02C5 /* Poppins-ExtraBold.ttf */,
+				A06B84002E7D44B2A5689B77 /* Poppins-Light.ttf */,
+				433650D6C1FC4B50B853F489 /* Poppins-Medium.ttf */,
+				28CF05D0C23B44609A689CE5 /* Poppins-Regular.ttf */,
+				4F071F3F3C87473A950550F4 /* Poppins-SemiBold.ttf */,
+				13802132D7B74E938A6C45FC /* AnadoluLogo.svg */,
+				F6D06BFC2E8D48DEB441DFCA /* splashscreen.png */,
+			);
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +195,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				3C726C09D3E34387A233E6F9 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -244,6 +318,19 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				7CB6201FC1AB40DCB5AF8031 /* Montserrat-Black.ttf in Resources */,
+				B64DC3E6ADBB4CCEAE0BBD99 /* Montserrat-Bold.ttf in Resources */,
+				F8CBD9813F694ABB9ED48836 /* Montserrat-Regular.ttf in Resources */,
+				32C9DE11D0D1425DBABE0FFF /* Montserrat-VariableFont_wght.ttf in Resources */,
+				386F0EBBED7342C4A0C0E9DD /* Poppins-Black.ttf in Resources */,
+				C78B37194133488698D66C2B /* Poppins-Bold.ttf in Resources */,
+				6B13B9ED9E8B4F88AFFD0822 /* Poppins-ExtraBold.ttf in Resources */,
+				9E9409E9BC604240A9647C1B /* Poppins-Light.ttf in Resources */,
+				01976672C0394DE599872FE7 /* Poppins-Medium.ttf in Resources */,
+				AF305613DC8B4C7F9103E8F4 /* Poppins-Regular.ttf in Resources */,
+				FA866224AD5240EA9BB30781 /* Poppins-SemiBold.ttf in Resources */,
+				B03DE9DE679B4F8A86A66BE6 /* AnadoluLogo.svg in Resources */,
+				A74F23EEE9CF487AB458E00A /* splashscreen.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
